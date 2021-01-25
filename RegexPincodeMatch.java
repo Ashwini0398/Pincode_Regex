@@ -23,9 +23,11 @@ public class RegexPincodeMatch {
 		String n1="400088";     //6digit pincode  test1
 		System.out.println(n1+""+IsPinCodeValid(n1));
 		
-		String n2="A400088";   //special character or alphabet     
+		String n2="A400088";   //special character or alphabet at first    
 		System.out.println(n2+""+IsPinCodeValid(n2));
 
+		String n3="400088B"; //special Character or  alphabet at last
+		System.out.println(n3+""+IsPinCodeValid(n3));
 	
 	}
 }
@@ -35,3 +37,4 @@ public class RegexPincodeMatch {
 
 //output displays  400088 true
 //A400088-false
+//400088A-false
