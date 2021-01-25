@@ -29,6 +29,10 @@ public class RegexPincodeMatch {
 		String n3="400088B"; //special Character or  alphabet at last
 		System.out.println(n3+""+IsPinCodeValid(n3));
 	
+		String n4="400 088"; //pincode with three digit gap
+		System.out.println(n4+""+IsPinCodeValid(n4));
+		
+	
 	}
 }
 
@@ -38,3 +42,4 @@ public class RegexPincodeMatch {
 //output displays  400088 true
 //A400088-false
 //400088A-false
+//400 088-true
